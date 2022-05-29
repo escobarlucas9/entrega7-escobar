@@ -1,0 +1,554 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+/*pagina index*/
+
+.contenedor {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "aside articleParrafo"
+    "articleIndex articleIndex"
+    "footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr 1fr auto ;
+}
+/*header*/
+
+header {
+    padding: 1rem;
+    grid-area: header;
+    background-color: black;
+   }
+
+.logo {
+    width: 50px;
+    border-radius: 50%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    width: 200px;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+header nav ul li :hover {
+    color: grey;
+}
+
+/* aqui comienza el main*/
+
+.mainIndex {
+    grid-area: main;
+}
+.contenedorUno {
+    display: flex;
+    background-color: red;
+   
+ }
+
+.barba {
+    width: 50%;
+}
+.peine {
+    width: 20%;
+    height: 30%;
+    position: relative;
+    top: 7rem;
+    left: 15rem;
+}
+.mainIndex h1 {
+    color: white;
+    font-size: 8rem;
+    font-family: 'Cantata One', serif;
+    }
+
+.asideIndex {
+    grid-area: aside;
+}
+
+
+.titulo {
+  color: white;
+  font-size: 6rem;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+
+/*img del primer contenedor*/
+.silla {
+    background-color: red;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    top: 3rem;
+    left: 3rem;
+}
+.silla img {
+    width: 300px;
+  position: relative;
+  top: 2.5rem;
+  left: 3rem;
+}
+
+/*parrafo del primer contenedor*/
+.articleParrafo {
+    grid-area: articleParrafo;
+}
+.parrafoUno {
+    text-align: right;
+    line-height: 2.5rem;
+    padding: 2rem;
+    color: white;
+    margin-top: 10rem;
+}
+
+
+/*tercer contenedor*/
+
+.articleIndex {
+    grid-area: articleIndex;
+    display: flex;
+    padding-bottom:6rem ;
+}
+.articleIndex p {
+    text-align: center;
+    font-size: 2rem;
+    padding: 50px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 8px;
+    color: white;
+    margin-top: 6rem;
+}
+.articleIndex img {
+    width: 350px;
+    position: relative;
+    top: 3rem;
+    right: 2rem;
+}
+/*footer general*/
+footer {
+    grid-area: footer;
+    background-color: black;
+    padding: 1rem;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+/*responsive del index*/
+
+@media screen and (max-width:600px) {
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "aside" 
+        "articleParrafo"
+        "articleIndex"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 2fr auto auto;
+    }
+    header nav ul li {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    header nav ul li {
+        width: 100px;
+        list-style-type: none;
+    }
+    .peine {
+        width: 20%;
+        height: 30%;
+        position: relative;
+        left: 6rem;
+        top: 4rem;
+    }
+}
+
+/*Pagina de servicios*/
+
+.contenedorServicios {
+    display: grid;
+    grid-template-areas: 
+    " header header"
+    "main main"
+    "aside section"
+    "article article"
+    "footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr 1fr  auto;
+}
+.headerServicios {
+    grid-area: header;
+}
+.mainServicios {
+    grid-area: main;
+}
+.asideServicios {
+    grid-area: aside;
+  margin: 2rem;
+  padding-top: 2rem;
+}
+.sectionServicios {
+    grid-area: section;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.articleServicios {
+    grid-area: article;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+}
+.footerServicios {
+    grid-area: footer;
+}
+/*main de la pagina servicios*/
+
+.mainServicios div {
+ height: 80%;
+ width: 100%;
+ padding: 15rem;
+ background-image: url(./img/barberia_byn.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+.mainServicios h1 {
+text-align: center;
+color: rgb(248, 244, 244);
+font-family: 'Bree Serif', serif;
+position: relative;
+bottom: 10rem;
+letter-spacing: 1rem;
+}
+.citas {
+    color: white;
+    text-align: center;
+    margin: 3rem;
+    font-size: 2rem;
+}
+.precios {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+    
+}
+/*aside de servicios*/
+
+.asideServicios h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+}
+.asideServicios p {
+    color: white;
+    margin: 2rem;
+}
+.sectionServicios h3 {
+    color: rgb(248, 244, 244);
+    font-size: 1.5rem;
+    margin-top: 5.5rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    text-decoration: underline;
+}
+/*section de servicios*/
+
+.sectionServicios h4 {
+    color: rgb(73, 72, 72);
+    font-size: 1.3rem;
+    margin: 1rem;
+   text-align: left;
+}
+.sectionServicios p {
+    color: white;
+    text-align: left;
+    margin-right: 1rem;
+}
+
+.imagenesServicios img {
+    width: 250px;
+    margin-right: 2rem;
+}
+.imagenesServicios {
+    display: flex;
+ }
+/*article de servicios*/
+
+.articleServicios h2 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+}
+
+.articleServicios p {
+    color: white;
+    margin-top: 1rem;
+    vertical-align: inherit;
+    
+}
+/*responsive de servicios*/
+
+@media screen and (max-width:600px) {
+    .contenedorServicios {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "aside" 
+        "section"
+        "article"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 2fr auto auto;
+    }
+    header nav ul li {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    header nav ul li {
+        width: 100px;
+        list-style-type: none;
+    }
+    .imagenesServicios {
+        display: flex;
+        flex-direction: column;
+     }
+}
+/*Pagina de colecciones*/
+.contenedorColecciones {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "aside section"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+}
+/*main de colecciones*/
+
+.imagendefondo {
+    width: 100%;
+    
+}
+.imagendefondo img {
+    width: 100%;
+    height: 60%;
+ }
+ /*aside de colecciones*/
+
+.asideColecciones h1 {
+    color: white;
+    font-family: 'Cantata One', serif;
+    text-align: center;
+    margin-top: 3rem;
+    text-decoration: underline;
+}
+.asideColecciones p {
+    color: white;
+    margin-top: 3rem;
+    line-height: 2.5rem;
+    margin-left: 1rem;
+    font-family: sans-serif;
+}
+
+.headerColecciones {
+    grid-area: header;
+}
+.mainColecciones {
+    grid-area: main;
+    
+}
+.asideColecciones {
+    grid-area: aside;
+}
+.articleColecciones {
+    grid-area: article;
+   
+}
+.footerColecciones {
+    grid-area: footer;
+    padding-top: 3rem;
+}
+/*carrusel de imagenes*/
+
+.carousel-inner {
+    margin-top: 5rem;
+}
+/*responsive de colecciones*/
+
+@media screen and (max-width:600px) {
+    .contenedorColecciones {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "aside" 
+        "section"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 2fr auto auto;
+    }
+    header nav ul li {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    header nav ul li {
+        width: 100px;
+        list-style-type: none;
+    }
+}
+/*Pagina de contacto*/
+.contenedor__contacto {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "aside section"
+    "article article"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: auto 1fr 1fr auto;
+}
+.headerContacto {
+    grid-area: header;
+}
+.mainContacto {
+    grid-area: main;
+}
+.asideContacto {
+    grid-area: aside;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.sectionContacto {
+    grid-area: section;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+article {
+    grid-area: article;
+}
+.footerContacto {
+    grid-area: footer;
+}
+/*main de contacto*/
+
+.imagencontacto {
+    width: 100%;
+   }
+.imagencontacto img {
+  width: 100%;
+  height: 40%;
+ }
+/*aside de contacto*/
+
+.asideContacto h1 {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Cantata One', serif;
+    margin: 1.5rem;
+    text-decoration: underline;
+}
+.medios {
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 1rem;
+    font-family: sans-serif;
+    margin-bottom: 2rem;
+}
+.emojis p {
+    color: white;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+}
+
+.asideContacto img {
+    width: 50px;
+    
+}
+/* section de contacto*/
+
+.sectionContacto h2 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-family:  'Cantata One', serif;
+    margin-top: 2rem;
+    text-decoration: underline;
+}
+.sectionContacto p {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+/*formulario de contacto*/
+
+.mb-3 h2 {
+    color: white;
+    text-align: center;
+    font-family:  'Cantata One', serif;
+}
+label {
+    color: white;
+}
+/*responsive de contacto*/
+
+@media screen and (max-width:600px) {
+    .contenedor__contacto {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "aside" 
+        "section"
+        "article"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 2fr auto auto;
+    }
+    header nav ul li {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    header nav ul li {
+        width: 100px;
+        list-style-type: none;
+    }
+}
