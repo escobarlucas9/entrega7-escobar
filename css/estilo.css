@@ -76,6 +76,7 @@ header nav ul li :hover {
     color: white;
     font-size: 8rem;
     font-family: 'Cantata One', serif;
+    
     }
 
 .asideIndex {
@@ -99,12 +100,20 @@ header nav ul li :hover {
     position: relative;
     top: 3rem;
     left: 3rem;
+    transition: all 2s;
 }
+
 .silla img {
     width: 300px;
   position: relative;
   top: 2.5rem;
   left: 3rem;
+  
+}
+.silla:hover {
+    position: relative;
+    left: 5rem;
+    top: 5rem;
 }
 
 /*parrafo del primer contenedor*/
@@ -141,6 +150,10 @@ header nav ul li :hover {
     position: relative;
     top: 3rem;
     right: 2rem;
+    transition: all 2s;
+}
+.articleIndex img:hover {
+    transform: scale(0.2);
 }
 footer {
     grid-area: footer;
@@ -235,6 +248,7 @@ font-family: 'Bree Serif', serif;
 position: relative;
 bottom: 10rem;
 letter-spacing: 1rem;
+
 }
 .citas {
     color: white;
@@ -247,8 +261,19 @@ letter-spacing: 1rem;
     text-align: center;
     font-size: 2rem;
     text-decoration: underline;
-    
-}
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+ }
+ @keyframes aparecer {
+     0% {
+       opacity: 0;
+     }
+     100% {
+       opacity: 1;
+     }
+  }
+
 .asideServicios h3 {
     color: white;
     font-size: 1.5rem;
@@ -274,34 +299,66 @@ letter-spacing: 1rem;
     margin: 1rem;
    text-align: left;
 }
+
 .sectionServicios p {
     color: white;
     text-align: left;
     margin-right: 1rem;
 }
-
-.imagenesServicios img {
-    width: 250px;
-    margin-right: 2rem;
-}
-.imagenesServicios {
-    display: flex;
- }
-
+/* article de servicios*/
 .articleServicios h2 {
     color: white;
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     text-decoration: underline;
-}
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+ }
+ @keyframes aparecer {
+     0% {
+       opacity: 0;
+     }
+     100% {
+       opacity: 1;
+     }
+  }
 
+.imagenesServicios {
+    display: flex;
+    }
+.imagenesServicios img {
+    width: 250px;
+    transition: all 2s;
+}
+.imagenesServicios img:hover {
+    transform: rotateX(70deg);
+opacity: -4;
+}
+.contenedorPrimero {
+    width: 20%;
+    margin-right: 4rem;
+    margin-left: 2rem;
+}
+.contenedorSegundo {
+    width: 20%;
+    margin-right: 4rem;
+}
+.contenedorTercero {
+    width: 20%;
+    margin-right: 4rem;
+}
+.contenedorCuarto {
+    width: 20%;
+    margin-right: 5rem;
+}
 .articleServicios p {
     color: white;
     margin-top: 1rem;
-    vertical-align: inherit;
+    text-align: center;
+    }
     
-}
 @media screen and (max-width:600px) {
     .contenedorServicios {
         display: grid;
@@ -346,7 +403,19 @@ letter-spacing: 1rem;
     text-align: center;
     margin-top: 3rem;
     text-decoration: underline;
-}
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+ }
+ @keyframes aparecer {
+     0% {
+       opacity: 0;
+     }
+     100% {
+       opacity: 1;
+     }
+  }
+
 .asideColecciones p {
     color: white;
     margin-top: 3rem;
@@ -455,14 +524,26 @@ article {
     font-family: 'Cantata One', serif;
     margin: 1.5rem;
     text-decoration: underline;
+    animation-duration: 2s;
+   animation-name: aparecer;
+   animation-iteration-count: infinite;
 }
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
 .medios {
     font-size: 1.5rem;
     color: white;
     margin-left: 1rem;
     font-family: sans-serif;
     margin-bottom: 2rem;
-}
+    }
 .emojis p {
     color: white;
     margin-bottom: 1.5rem;
@@ -480,7 +561,19 @@ article {
     font-family:  'Cantata One', serif;
     margin-top: 2rem;
     text-decoration: underline;
-}
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+ }
+ @keyframes aparecer {
+     0% {
+       opacity: 0;
+     }
+     100% {
+       opacity: 1;
+     }
+  }
+
 .sectionContacto p {
     color: white;
     font-family: sans-serif;
