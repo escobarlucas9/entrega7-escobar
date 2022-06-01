@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Barberia el patrón</title>
 </head>
@@ -26,7 +27,7 @@
                 <a href="#"><img class="logo" src="../img/barber.jpg" alt="logo"></a>
                 <!--lista desordenada-->
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
                     <li><a href="colecciones.html">colecciones</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
@@ -50,6 +51,18 @@
             <p>Lads Cut (Edad 4 - 14 años) (30 minutos) $500.</p>
             <p>Forma y diseño de la barba (15 minutos) $200.</p>
             <p>Lavar, cortar, peinar y terminar con forma y diseño de barba $600.</p>
+            <p>
+                <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                  Quiero un Turno
+                </button>
+              </p>
+              <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                  <div class="card card-body" style="width: 300px;">
+                    Para solicitar un turno tienes que completar el formulario en la pagina contacto o tenes nuestras redes sociales para comunicarte.
+                  </div>
+                </div>
+              </div>
         </aside>
         <section class="sectionServicios">
             <!--seccion con detalles de la barberia-->
@@ -95,5 +108,7 @@
             <p>Todos los derechos reservados</p>
         </footer>
     </div>
+     <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

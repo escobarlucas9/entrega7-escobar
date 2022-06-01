@@ -76,8 +76,7 @@ header nav ul li :hover {
     color: white;
     font-size: 8rem;
     font-family: 'Cantata One', serif;
-    
-    }
+     }
 
 .asideIndex {
     grid-area: aside;
@@ -90,6 +89,7 @@ header nav ul li :hover {
   text-align: left;
   margin-left: 2rem;
   margin-top: 3rem;
+  font-family: 'Cantata One', serif;
 }
 
 /*img del primer contenedor*/
@@ -126,6 +126,7 @@ header nav ul li :hover {
     padding: 2rem;
     color: white;
     margin-top: 10rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -255,6 +256,7 @@ letter-spacing: 1rem;
     text-align: center;
     margin: 3rem;
     font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 .precios {
     color: white;
@@ -264,6 +266,7 @@ letter-spacing: 1rem;
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
+    font-family: 'Cantata One', serif;
  }
  @keyframes aparecer {
      0% {
@@ -280,10 +283,12 @@ letter-spacing: 1rem;
     margin-top: 4rem;
     margin-bottom: 3rem;
     text-decoration: underline;
+    font-family: 'Cantata One', serif;
 }
 .asideServicios p {
     color: white;
     margin: 2rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 .sectionServicios h3 {
     color: rgb(248, 244, 244);
@@ -292,18 +297,21 @@ letter-spacing: 1rem;
     margin-bottom: 2rem;
     text-align: left;
     text-decoration: underline;
+    font-family: 'Cantata One', serif;
 }
 .sectionServicios h4 {
     color: rgb(73, 72, 72);
     font-size: 1.3rem;
     margin: 1rem;
    text-align: left;
+   font-family: 'Cantata One', serif;
 }
 
 .sectionServicios p {
     color: white;
     text-align: left;
     margin-right: 1rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 /* article de servicios*/
 .articleServicios h2 {
@@ -315,6 +323,7 @@ letter-spacing: 1rem;
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
+    font-family: 'Cantata One', serif;
  }
  @keyframes aparecer {
      0% {
@@ -357,6 +366,7 @@ opacity: -4;
     color: white;
     margin-top: 1rem;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
     }
     
 @media screen and (max-width:600px) {
@@ -421,7 +431,7 @@ opacity: -4;
     margin-top: 3rem;
     line-height: 2.5rem;
     margin-left: 1rem;
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 .contenedorColecciones {
     display: grid;
